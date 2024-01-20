@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1>TODO</h1>
+        <img src="images/icon-sun.svg" alt="sun" />
+      </nav>
+      <section>
+        <i class="ri-circle-line"></i>
+        <textarea
+          name="todo"
+          id="todo"
+          placeholder="Create a new todo.."
+        ></textarea>
+      </section>
+      <ul>
+        <li>
+          <input class="check" type="checkbox" />
+          <span class="text">jdsank</span>
+          <img class="cross" src="images/icon-cross.svg" alt="" />
+        </li>
+        <li>
+          <span class="text">jdsank</span>
+          <img class="cross" src="images/icon-cross.svg" alt="" />
+        </li>
+      </ul>
+      <footer>
+        <span><span id="count">0</span> items left</span>
+        <button id="all">All</button>
+        <button id="active">Active</button>
+        <button id="completed">Complete</button>
+        <button id="clear">Clear Completed</button>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

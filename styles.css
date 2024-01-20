@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  /* background-color: rgb(46, 44, 44); */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%); */
+  background-color: hsl(235, 21%, 11%);
+  background-image: url('images/bg-desktop-dark.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100vw 40vh;
+  z-index: -1;
+}
+.container {
+  margin-top: 8vw;
+}
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+nav h1 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size: 2rem;
+}
+section {
+  margin: 0rem auto 2rem;
+  position: relative;
+}
+section textarea {
+  background-color: hsl(235, 24%, 19%);
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  min-width: 500px;
+  font-size: 1rem;
+  padding: 1.5rem 3rem 0.2rem;
+  resize: none;
+}
+section i {
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+ul li {
+  background-color: hsl(235, 24%, 19%);
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 100%;
+  min-width: 500px;
+  font-size: 1rem;
+  padding: 1.3rem 1rem 1.3rem;
+  resize: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+ul li img {
+  margin-right: 1rem;
+}
+ul li .check {
+  border-radius: 50%;
+  padding: 0.6rem;
+  border: 1px solid #fff;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  margin-right: 0.8rem;
+}
+ul li .check:checked {
+  background: url('images/icon-check.svg'),
+    linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: #234344;
+}
+
+ul li .check:checked ~ .text {
+  text-decoration: line-through;
+}
+ul li .cross {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
